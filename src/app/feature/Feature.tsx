@@ -17,7 +17,7 @@ const features = [
   { icon: <FaChartBar size={40} />, title: "AI-Powered Analytics", desc: "Smart AI analytics for better decision-making." },
 ];
 
-const Feature: React.FC = () => {
+const Feature = () => {
   return (
     <section id="feature" className="feature px-6 md:px-16 py-12 bg-black">
       <div className="content text-center my-14">
