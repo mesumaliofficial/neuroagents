@@ -12,7 +12,7 @@ export default function Banner() {
   return (
     <header
       id="home"
-      className="relative bg-black text-white h-screen flex flex-col items-center justify-center text-center px-4 bg-fixed"
+      className="relative bg-black text-white h-[85vh] flex flex-col items-center justify-center text-center px-4 bg-fixed"
       style={{
         backgroundImage: `url(${bannerBg.src})`,
         backgroundSize: "cover",
@@ -24,7 +24,7 @@ export default function Banner() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
 
       {/* Content */}
-      <div className="relative z-10 w-full flex flex-col items-center justify-center">
+      <div className="relative z-10 w-full flex flex-col items-center justify-center lg:mt-20">
         <motion.h1
           className="text-5xl md:text-6xl font-extrabold py-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-300 drop-shadow-md"
           variants={textVariant(0.2)}

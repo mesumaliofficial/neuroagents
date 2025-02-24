@@ -10,7 +10,6 @@ const menuItems = [
     { name: "Technology", path: "/technology" },
     { name: "Agents", path: "/agents" },
     { name: "Pricing", path: "/pricing" },
-    { name: "Contact", path: "/contact" }
 ];
 
 const Navbar: React.FC = () => {
@@ -38,7 +37,6 @@ const Navbar: React.FC = () => {
         };
     }, [isOpen]);
 
-    // Prevent body scroll when sidebar is open
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = "hidden";
@@ -83,7 +81,7 @@ const Navbar: React.FC = () => {
                 </ul>
                 <div className="hidden lg:flex">
                     <button className="uppercase px-6 py-3 bg-gradient-to-r from-gray-200 to-white text-black font-semibold rounded-lg shadow-lg hover:from-gray-300 hover:to-white hover:scale-105 transition-transform duration-300">
-                        Launch Console
+                        Contact Now
                     </button>
                 </div>
             </div>
