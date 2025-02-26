@@ -83,7 +83,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-                © 2025 Agentic World. All Rights Reserved.
+                © 2025 Agentic World - Mesum Ali All Rights Reserved.
             </div>
         </motion.footer>
     );

@@ -23,7 +23,7 @@ const Technology = () => {
   return (
     <section id="technology" className="px-6 md:px-16 py-24 bg-black relative overflow-hidden">
       {/* Subtle Animated Background Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-black opacity-50 pointer-events-none"></div>
+      <div className="absolute inset-0 pointer-events-none"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center">

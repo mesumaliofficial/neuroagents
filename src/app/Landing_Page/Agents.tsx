@@ -21,9 +21,9 @@ const agents = [
 
 const Agents = () => {
   return (
-    <section id="agents" className="px-6 md:px-16 py-24 bg-black relative overflow-hidden">
+    <section id="agents" className="px-6 md:px-16 py-24 bg-gradient-to-r from-gray-900 via-black to-gray-900 relative overflow-hidden">
       {/* Background Glow Effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-50 pointer-events-none"></div>
+      <div className="absolute inset-0 pointer-events-none"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center">

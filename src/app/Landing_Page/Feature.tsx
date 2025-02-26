@@ -19,7 +19,7 @@ const features = [
 
 const Feature = () => {
   return (
-    <section id="feature" className="feature px-6 md:px-16 py-24 bg-black">
+    <section id="feature" className="feature px-6 md:px-16 py-24 bg-gradient-to-r from-gray-900 via-black to-gray-900">
       <div className="content text-center my-14">
         <motion.h1
           className="text-4xl font-extrabold mb-6 text-white drop-shadow-[0_0_10px_rgba(0,255,255,1)]"

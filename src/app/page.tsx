@@ -5,6 +5,7 @@ import Feature from "./Landing_Page/Feature";
 import Technology from "./Landing_Page/Technology";
 import Agents from "./Landing_Page/Agents";
 import Pricing from "./Landing_Page/Prices";
+import Contact from "./Landing_Page/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Technology />
       <Agents />
       <Pricing />
+      <Contact />
       <Footer />
     </>
   );

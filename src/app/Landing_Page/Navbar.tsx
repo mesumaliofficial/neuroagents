@@ -79,9 +79,11 @@ const Navbar: React.FC = () => {
                     ))}
                 </ul>
                 <div className="hidden lg:flex">
+                    <Link to="contact" smooth={true} duration={700}>
                     <button className="uppercase px-6 py-3 bg-gradient-to-r from-gray-200 to-white text-black font-semibold rounded-lg shadow-lg hover:from-gray-300 hover:to-white hover:scale-105 transition-transform duration-300">
                         Contact Now
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>
