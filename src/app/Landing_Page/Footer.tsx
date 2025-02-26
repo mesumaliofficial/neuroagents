@@ -19,7 +19,7 @@ const Footer = () => {
                 
                 {/* Logo & Description */}
                 <div>
-                    <h1 className="text-3xl font-extrabold text-cyan-400">Agentic World</h1>
+                    <h1 className="text-3xl font-extrabold text-white">Agentic World</h1>
                     <p className="mt-2 text-gray-400 text-sm">Next-generation AI agents powering the future of enterprise intelligence.</p>
                     
                     {/* Social Icons */}
@@ -27,21 +27,21 @@ const Footer = () => {
                         <motion.a 
                             whileHover={{ scale: 1.2, rotate: 10 }} 
                             href="#" 
-                            className="text-cyan-400 text-3xl transition"
+                            className="text-white text-3xl transition"
                         >
                             <AiFillGithub />
                         </motion.a>
                         <motion.a 
                             whileHover={{ scale: 1.2, rotate: 10 }} 
                             href="#" 
-                            className="text-cyan-400 text-3xl transition"
+                            className="text-white text-3xl transition"
                         >
                             <AiFillTwitterCircle />
                         </motion.a>
                         <motion.a 
                             whileHover={{ scale: 1.2, rotate: 10 }} 
                             href="#" 
-                            className="text-cyan-400 text-3xl transition"
+                            className="text-white text-3xl transition"
                         >
                             <AiFillLinkedin />
                         </motion.a>
@@ -53,8 +53,8 @@ const Footer = () => {
                     <h2 className="text-xl font-semibold mb-3">Quick Links</h2>
                     <ul className="text-gray-400 space-y-2">
                         {["Home", "AI Agents", "Pricing", "Blog", "Contact"].map((link, index) => (
-                            <motion.li key={index} whileHover={{ x: 5, color: "#00FFFF" }}>
-                                <a href="#" className="hover:text-cyan-400 transition">{link}</a>
+                            <motion.li key={index} whileHover={{ x: 5, color: "#FFFFFF" }}>
+                                <a href="#" className="hover:text-white transition">{link}</a>
                             </motion.li>
                         ))}
                     </ul>
@@ -65,8 +65,8 @@ const Footer = () => {
                     <h2 className="text-xl font-semibold mb-3">Resources</h2>
                     <ul className="text-gray-400 space-y-2">
                         {["Docs", "API Reference", "Tutorials", "AI Use Cases"].map((link, index) => (
-                            <motion.li key={index} whileHover={{ x: 5, color: "#00FFFF" }}>
-                                <a href="#" className="hover:text-cyan-400 transition">{link}</a>
+                            <motion.li key={index} whileHover={{ x: 5, color: "#FFFFFF" }}>
+                                <a href="#" className="hover:text-white transition">{link}</a>
                             </motion.li>
                         ))}
                     </ul>

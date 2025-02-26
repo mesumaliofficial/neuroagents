@@ -11,7 +11,7 @@ const textVariant = (delay: number) => ({
 export default function Banner() {
   return (
     <header
-      id="home"
+      id="/"
       className="relative bg-black text-white h-[85vh] flex flex-col items-center justify-center text-center px-4 bg-fixed"
       style={{
         backgroundImage: `url(${bannerBg.src})`,

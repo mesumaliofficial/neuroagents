@@ -1,15 +1,15 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link } from "react-scroll"
 
 const menuItems = [
     { name: "Home", path: "/" },
-    { name: "Features", path: "/feature" },
-    { name: "Technology", path: "/technology" },
-    { name: "Agents", path: "/agents" },
-    { name: "Pricing", path: "/pricing" },
+    { name: "Features", path: "feature" },
+    { name: "Technology", path: "technology" },
+    { name: "Agents", path: "agents" },
+    { name: "Pricing", path: "pricing" },
 ];
 
 const Navbar: React.FC = () => {
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
         <div className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-md shadow-lg transition-all duration-300">
             <div className="container mx-auto px-6 flex items-center justify-between py-4 relative z-10">
                 <div className="logo">
-                    <Link href="/" className="text-3xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200">
+                    <Link to="/" smooth={true} duration={500} className="text-3xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200">
                         Agentic World
                     </Link>
                 </div>
@@ -61,16 +61,15 @@ const Navbar: React.FC = () => {
                     {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
                 </button>
                 <ul
-                    className={`sidebar lg:flex lg:space-x-8 ${
-                        isOpen
+                    className={`sidebar lg:flex lg:space-x-8 ${isOpen
                             ? "fixed top-0 left-0 w-72 h-[100vh] bg-gray-900 p-6 flex flex-col items-center space-y-6 transition-transform duration-300 ease-in-out transform translate-x-0"
                             : "hidden lg:flex lg:items-center lg:space-x-8"
-                    }`}
+                        }`}
                 >
                     {menuItems.map((item) => (
                         <li key={item.name}>
                             <Link
-                                href={item.path}
+                                to={item.path} smooth={true} duration={700}
                                 className="text-white hover:text-gray-300 cursor-pointer transition"
                                 onClick={() => setIsOpen(false)}
                             >
