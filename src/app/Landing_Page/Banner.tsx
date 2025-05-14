@@ -12,7 +12,7 @@ export default function Banner() {
   return (
     <header
       id="/"
-      className="relative bg-black text-white h-[85vh] flex flex-col items-center justify-center text-center px-4 bg-fixed"
+      className="relative bg-black text-white min-h-screen flex flex-col items-center justify-center text-center px-4 bg-fixed"
       style={{
         backgroundImage: `url(${bannerBg.src})`,
         backgroundSize: "cover",
